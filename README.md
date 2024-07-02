@@ -22,13 +22,15 @@ public class main{
        result = a * b;
        System.out.println("The multiplication of the two numbers is : " +result);
        break;
-       case '/' :
-       result = a / b;
-       System.out.println("The divison of the two numbers is : " +result);
+       case '/' :if(b==0){
+       System.out.println("Invalid division");
+      else { result = a / b;
+       System.out.println("The divison of the two numbers is : " +result);}
        break;
-       case '%' :
-       result = a % b;
-       System.out.println("The modulo of the two numbers is : " +result);
+       case '%' :if(b==0){
+       System.out.println("Invalid division");
+      else { result = a % b;
+       System.out.println("The modulo of the two numbers is : " +result);}
        break;
         default:
         System.out.println("INVALID IMPUTS!!!");
